@@ -1,5 +1,6 @@
 @isTest
 public with sharing class InlineEditTableControllerTest {
+    
     @isTest public static void GetAccountsTest() {
         List<Account> account = new List<Account>();
         account.add(new account(Name = 'abc'));

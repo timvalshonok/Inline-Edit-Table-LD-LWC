@@ -1,0 +1,16 @@
+<template>
+    <lightning-card>
+        <div class="slds-var-p-around_small">
+            <div style="max-height: 530px;" onitemregister={handleItemRegister}>
+                <c-custom-data-table class="slds-max-medium-table_stacked" onvaluechange={handleValueChange}
+                    oncellchange={handleCellChange} data={records} columns={columns} show-row-number-column="false"
+                    key-field="Id" draft-values={draftValues} onsave={handleSave} data-record="Id" onedit={handleEdit}
+                    hide-checkbox-column="true" oncancel={handleCancel} onrowaction={handleRowAction}>
+                </c-custom-data-table>
+            </div>
+        </div>
+        <div class="showSpinner" if:true={showSpinner}>
+            <lightning-spinner alternative-text="Loading" variant="brand"></lightning-spinner>
+        </div>
+    </lightning-card>
+</template>

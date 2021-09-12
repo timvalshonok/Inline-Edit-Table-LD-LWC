@@ -1,0 +1,12 @@
+.slds-button__icon_edit {
+    transition: all 500ms ease;
+    fill: #009EDB;
+}
+
+.slds-button_icon {
+    --lwc-colorTextIconDefault: rgba(120, 120, 120);
+}
+
+.slds-button_icon:hover {
+    --lwc-colorTextIconDefault: #009EDB;
+}

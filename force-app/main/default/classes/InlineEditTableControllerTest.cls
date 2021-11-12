@@ -9,7 +9,7 @@ public with sharing class InlineEditTableControllerTest {
         insert accounts;
     }
 
-    @isTest public static void GetAccountsTest() {
+    @isTest public static void getAccountsTest() {
 
         test.startTest();
         List<Account> actual = InlineEditTableController.getAccounts();
@@ -19,7 +19,7 @@ public with sharing class InlineEditTableControllerTest {
         System.assertEquals(expected, actual, 'Should be list of accounts with columns Name, Rating');
     }
 
-    @isTest public static void SaveDraftValuesTest() {
+    @isTest public static void saveDraftValuesTest() {
 
         List<Account> accounts = [SELECT Id, Name, Rating FROM Account WHERE Name='Test' AND Rating='Cold' LIMIT 1];
         accounts[0].Name = 'Tested';

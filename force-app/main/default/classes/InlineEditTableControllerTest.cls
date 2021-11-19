@@ -2,7 +2,7 @@
 public with sharing class InlineEditTableControllerTest {
 
     @TestSetup
-    static void setup(){
+    static void setup() {
         
         List<Account> accounts = new List<Account>();
         accounts.add(new Account(Name = 'Test', Rating = 'Cold'));

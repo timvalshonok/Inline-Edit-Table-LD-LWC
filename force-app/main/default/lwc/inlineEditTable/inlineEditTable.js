@@ -29,7 +29,7 @@ export default class InlineEditTable extends LightningElement {
 
     //get accounts
     @wire(getAccounts)
-    wiredAccountsRecords(result){
+    wiredAccountsRecords(result) {
         this.wiredRecords = result;
         const { data, error } = result;
         if (data) {
